@@ -1,5 +1,5 @@
 // Backend Proxy
-let server = "";
+let server = "https://htz-api.bwlok.dev/lms/";
 
 
 const loginButton = document.getElementById("login-button");
