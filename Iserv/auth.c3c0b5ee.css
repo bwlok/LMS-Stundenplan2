@@ -1,0 +1,215 @@
+body, html {
+    height: 100%;
+    --main-panel-max-width: 450px
+}
+
+.auth-container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between
+}
+
+.auth-container footer, .auth-container header, .auth-container main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.auth-container main {
+    margin-bottom: 32px;
+    margin-top: 32px
+}
+
+@media (min-height: 768px) {
+    .auth-container:after, .auth-container:before {
+        content: " "
+    }
+}
+
+.school-logo {
+    max-height: 250px
+}
+
+.school-logo-svg {
+    min-height: 50px;
+    min-width: 50%
+}
+
+.school-organization {
+    font-size: 26px;
+    font-weight: 700
+}
+
+.school-domain {
+    font-size: 18px
+}
+
+.main-panel {
+    max-width: var(--main-panel-max-width);
+    width: 100%
+}
+
+@media (min-width: 768px) {
+    .main-panel.panel-wide {
+        max-width: 700px;
+        width: 700px
+    }
+}
+
+.logo-iserv {
+    display: block;
+    margin: 0 auto 15px;
+    position: relative;
+    right: 16px;
+    width: 135px
+}
+
+body {
+    background: var(--content-bg-color)
+}
+
+.main-panel, body {
+    color: var(--text-color)
+}
+
+.main-panel {
+    background-color: var(--body-bg-color)
+}
+
+@keyframes iserv-loading-indicator {
+    0% {
+        transform: translateY(4px)
+    }
+    to {
+        transform: translateY(0)
+    }
+    0%, 50% {
+        background-color: #00467d
+    }
+    75% {
+        background-color: #7fc0ff
+    }
+    to {
+        background-color: #fab900
+    }
+}
+
+.iserv-loading-indicator {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center
+}
+
+.iserv-loading-indicator > div {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin: 0 2px;
+    width: 10px
+}
+
+.iserv-loading-indicator .c1 {
+    animation: iserv-loading-indicator .6s ease 0ms infinite alternate
+}
+
+.iserv-loading-indicator .c2 {
+    animation: iserv-loading-indicator .6s ease .2s infinite alternate
+}
+
+.iserv-loading-indicator .c3 {
+    animation: iserv-loading-indicator .6s ease .4s infinite alternate
+}
+
+body.body-embedded {
+    height: auto;
+    padding: 0
+}
+
+.body-embedded .login-actions {
+    display: flex;
+    justify-content: space-between
+}
+
+.body-embedded p {
+    margin-top: 0
+}
+
+.login-buttons-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: var(--main-panel-max-width)
+}
+
+.login-buttons-container a {
+    white-space: normal
+}
+
+.or-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    max-width: var(--main-panel-max-width);
+    width: 100%
+}
+
+.hr-container {
+    flex: 1;
+    margin: 0 8px
+}
+
+@media (min-width: 768px) {
+    .or-container {
+        margin-bottom: 16px;
+        margin-top: 16px
+    }
+
+    .hr-container {
+        margin: 0 16px
+    }
+}
+
+.main-panel .panel-footer {
+    align-items: center;
+    background-color: var(--content-bg-color);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 12px
+}
+
+.logged-in-message {
+    align-items: center;
+    display: flex;
+    gap: 8px
+}
+
+.login-button:disabled > .login-icon-bracket, .login-button:enabled > .login-icon-spin {
+    display: none
+}
+
+button {
+    background-color: transparent;
+    border: 0
+}
+
+#pw-invisible, #pw-visible {
+    display: block;
+    width: 17.5px
+}
+
+.form-control-feedback {
+    right: 43px
+}
+
+.input-group-addon {
+    border-left: 0;
+    border-radius: 2px
+}

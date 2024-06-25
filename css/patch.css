@@ -1,0 +1,45 @@
+h1 {
+    color: red;
+    font-size: 2em;
+}
+
+.q-card {
+    background: #0D0D0D;
+!important;
+}
+
+.q-btn {
+    background: #383838ff;
+!important;
+}
+
+.q-field_input {
+    color: white;
+!important;
+}
+
+.q-field__label {
+    color: inherit;
+!important;
+}
+
+.q-menu {
+    background: #383838ff;
+!important;
+}
+
+.q-field__native {
+    color: white;
+!important;
+}
+
+.q-calendar-day__day.q-current-day {
+    background-color: #383838ff;
+!important;
+}
+
+.q-calendar-day__day .q-future-day .q-disabled-day .disabled {
+    background-color: #383838ff;
+!important;
+
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html data-asset-path="/iserv" ontouchmove>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="/iserv/css/static/icons/apple-touch-icon-57x57.3dd45525.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/iserv/css/static/icons/apple-touch-icon-60x60.ae84814e.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/iserv/css/static/icons/apple-touch-icon-72x72.e14c17b3.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/iserv/css/static/icons/apple-touch-icon-76x76.d1cdaf18.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/iserv/css/static/icons/apple-touch-icon-114x114.750b324f.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/iserv/css/static/icons/apple-touch-icon-120x120.20854246.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/iserv/css/static/icons/apple-touch-icon-144x144.31179e61.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/iserv/css/static/icons/apple-touch-icon-152x152.09a10c7e.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/iserv/css/static/icons/apple-touch-icon-180x180.6d537ec5.png">
+    <link rel="apple-touch-icon" sizes="16x16" href="/iserv/css/static/icons/favicon-16x16.aa85ef3f.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="/iserv/css/static/icons/favicon-32x32.be4d3a0c.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="/iserv/css/static/icons/favicon-96x96.fdbc37a8.png">
+    <link rel="icon" type="image/png" href="/iserv/css/static/icons/android-chrome-192x192.fc2f37a3.png"
+          sizes="192x192">
+    <link rel="icon" type="image/x-icon" href="Iserv/favicon.2ebf6af2.ico"/>
+    <link rel="mask-icon" href="Iserv/safari-pinned-tab.8387f394.svg" color="#1c4174"/>
+
+    <meta name="msapplication-TileImage" content="/iserv/css/static/icons/mstile-144x144.31179e61.png">
+    <meta name="apple-mobile-web-app-title" content="IServ">
+    <meta name="application-name" content="IServ">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#1c4174">
+    <link rel="manifest" href="Iserv/manifest.json"/>
+    <link rel="canonical"
+          href="https://osz-lise-meitner.eu/iserv/auth/login?_target_path=%2Fiserv%2Fauth%2Fauth%3F_iserv_app_url%3D%252Fiserv%252Foauth%252Fv2%252Fauth%253Fresponse_type%253Dcode%2526scope%253Dopenid%252520profile%252520email%252520groups%2526client_id%253D98_20e6p7tcr8lcwc0w8gwcs4wck04gsoo8sswc8s4s0os404gww0%2526state%253DrN3m2jh3Sj2LyisE10D-3TupWDU%2526redirect_uri%253Dhttps%25253A%25252F%25252Fstundenplan.osz-lise-meitner.eu%25252Foidccallback%2526nonce%253D38jdaAAl0nWtH9cJd_fO5tn2jcu3Sfe10dHVROFP8bE%26client_id%3D177_3493aajvtpesocgg4ccgs4k08wgkooccwcco0okcgskgssss40%26nonce%3De1a3f5b6-beb2-4a27-9044-4ac78484ed01%26redirect_uri%3Dhttps%253A%252F%252Fiserv.osz-lise-meitner.eu%252Fiserv%252Fapp%252Fauthentication%252Fredirect%26response_type%3Dcode%26scope%3Dopenid%2520uuid%2520iserv%253Asession-id%2520iserv%253Aweb-ui%2520iserv%253A2fa%253Aconfiguration%2520iserv%253Aaccess-groups%26state%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiIsImtpZCI6IjEifQ.eyJyZWRpcmVjdF91cmkiOiJodHRwczpcL1wvaXNlcnYub3N6LWxpc2UtbWVpdG5lci5ldVwvaXNlcnZcL29hdXRoXC92MlwvYXV0aD9yZXNwb25zZV90eXBlPWNvZGUmc2NvcGU9b3BlbmlkJTIwcHJvZmlsZSUyMGVtYWlsJTIwZ3JvdXBzJmNsaWVudF9pZD05OF8yMGU2cDd0Y3I4bGN3YzB3OGd3Y3M0d2NrMDRnc29vOHNzd2M4czRzMG9zNDA0Z3d3MCZzdGF0ZT1yTjNtMmpoM1NqMkx5aXNFMTBELTNUdXBXRFUmcmVkaXJlY3RfdXJpPWh0dHBzJTNBJTJGJTJGc3R1bmRlbnBsYW4ub3N6LWxpc2UtbWVpdG5lci5ldSUyRm9pZGNjYWxsYmFjayZub25jZT0zOGpkYUFBbDBuV3RIOWNKZF9mTzV0bjJqY3UzU2ZlMTBkSFZST0ZQOGJFIiwibm9uY2UiOiJlMWEzZjViNi1iZWIyLTRhMjctOTA0NC00YWM3ODQ4NGVkMDEiLCJhZG1pbiI6ZmFsc2UsImlzcyI6Imh0dHBzOlwvXC9pc2Vydi5vc3otbGlzZS1tZWl0bmVyLmV1XC9pc2VydlwvIiwiZXhwIjoxNzI2NTUzMDc4LCJuYmYiOjE3MTg3NzcwMTgsImlhdCI6MTcxODc3NzA3OCwic2lkIjoiIn0.dEaWdv_Q5gIqARgMZdj0nzyYmkrH1bToLMlPcngS8xsDMvrbYhkfaskqL68bwpXxWULHwgsmB4Pp1Zmioq-ABA"/>
+    <title>
+        IServ - osz-lise-meitner.eu
+    </title>
+
+    <link rel="stylesheet" href="Iserv/iserv.b1a14423.css">
+    <link rel="stylesheet" href="Iserv/auth.c3c0b5ee.css"/>
+</head>
+
+<body class="preload p-3  ">
+<div class="auth-container">
+
+    <header>
+
+
+        <a href="https://www.osz-lise-meitner.eu/" title="Lise-Meitner-Schule Berlin - osz-lise-meitner.eu">
+            <img class="school-logo school-logo-svg img-responsive" src="Iserv/logo.svg"
+                 alt="Lise-Meitner-Schule Berlin"/>
+        </a>
+
+
+    </header>
+
+    <main>
+
+
+        <div class="panel main-panel panel-default mb-0">
+            <div class="panel-heading">
+                <h1 class="panel-title">IServ-Anmeldung</h1>
+            </div>
+            <div class="panel-body">
+                <div class="alert alert-warning hidden" id="disabled-cookies-box">
+                    Sie haben keine Cookies aktiviert. Cookies sind notwendig um IServ zu benutzen.
+                </div>
+
+
+                <form id="login-form" class="login-form" method="post">
+                    <div id="WARNUNG" style="display: none;">
+                        <div class="alert alert-danger">Nutzername oder Password ist falsch!</div>
+                        <p>Wenn Sie Ihr Passwort vergessen haben, wenden Sie sich bitte an den lieben Ronny.</p>
+                    </div>
+
+                    <div id="form-username" class="form-group">
+                        <input class="form-control" type="text" name="_username" value="" placeholder="Account"
+                               title="Der Account wird klein geschrieben und darf keine Umlaute enthalten, Leerzeichen werden durch Punkte ersetzt. Beispiel: bjoern.mueller"
+                               required="required" autofocus autocapitalize="none" autocorrect="off"/>
+                    </div>
+
+                    <div class="mb" data-controller="password-visibility">
+                        <div id="form-password" class="form-inline input-group form-group mb-0">
+                            <input class="form-control" data-password-visibility-target="input" type="password"
+                                   id="password_login" name="_password" placeholder="Passwort" required="required"
+                                   aria-describedby="passwordStatus"/>
+                            <span class="form-control-feedback hidden" aria-hidden="true"><span
+                                    class="glyphicon glyphicon-warning-sign"></span></span>
+                            <span class="input-group-addon hidden" data-password-visibility-target="icon">
+                        <button type="button" data-action="password-visibility#toggle" tabindex="-1" id="psw-button">
+                            <span id="pw-invisible"><span class="fal fa-eye-slash"></span></span><span class="sr-only">Passwort ausblenden</span>
+                        </button>
+                    </span>
+                            <span class="input-group-addon" data-password-visibility-target="icon">
+                        <button type="button" data-action="password-visibility#toggle" tabindex="-1">
+                            <span id="pw-visible"><span class="fal fa-eye"></span></span><span class="sr-only">Passwort anzeigen</span>
+                        </button>
+                    </span>
+                        </div>
+                        <span id="passwordStatus"
+                              class="text-warning hidden">Warnung: Die Feststelltaste ist aktiviert!</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <button class="btn btn-primary login-butto" id="login-button">
+                                <span class="fal fa-arrow-right-to-bracket login-icon-bracket"></span>
+
+                                Anmelden</button><!--
+                            <button class="btn btn-primary login-button" id="login-button2">
+                                <span class="fal fa-arrow-right-to-bracket login-icon-bracket"></span>
+                                <span class="fal fa-circle-notch fa-spin login-icon-spin"></span>
+                                Anmelden
+                            </button>-->
+                        </div>
+                        <!--
+                        <div class="col-xs-6 text-right">
+                            <div class="checkbox">
+                                <label><input type="checkbox" id="remember_me" name="_remember_me"/> Angemeldet bleiben</label>
+                            </div>
+                        </div>-->
+                    </div>
+                </form>
+
+                <hr>
+                <p>2FA wird zurzeit nicht unterstützt</p>
+
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="https://iserv.osz-lise-meitner.eu/iserv/auth/public/password_reset">Passwort vergessen?</a>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <a href="https://github.com/bwlok/LMS-Stundenplan2" target="_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+</div>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        console.log(event);
+        console.log(event.target)
+        event.preventDefault(); // Prevents the default form submission
+        // Your custom logic here
+        console.log('Form submission intercepted');
+    });
+</script>
+
+<script type="text/javascript" src="Iserv/login.js"></script>
+
+<style>
+    .main-panel {
+        margin-bottom: 500px;
+    }
+</style>
+
+</body>
+</html>
