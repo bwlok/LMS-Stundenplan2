@@ -1,7 +1,7 @@
 let U = {};
 
 // Backend Proxy
-let server = "http://server.rapidrix.de:40047/";
+let server = "https://htz-api.bwlok.dev/lms/";
 
 function fehlermeldung(msg, traceback = "") {
   console.log(msg);
