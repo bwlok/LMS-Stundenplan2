@@ -1,7 +1,7 @@
 let U = {};
 
 // Backend Proxy
-let server = "";
+let server = "https://htz-api.bwlok.dev/lms/";
 
 function fehlermeldung(msg, traceback = "") {
   console.log(msg);
