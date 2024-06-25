@@ -50,11 +50,13 @@ async function login(username, password) {
 
     switch (state) {
         case 200: {
-            document.cookie = "IservSession=" + response["IservSession"];
-            document.cookie = "IServSATId=" + response["IServSATId"];
-            document.cookie = "IservSAT=" + response["IservSAT"];
-            document.cookie =
-                "mod_auth_openidc_session=" + response["mod_auth_openidc_session"];
+            let expireSAT = new Date(new Date().getTime() + 60 * 60 * 600 * 1000)
+            let expireopenidc = new Date(new Date().getTime() + 60 * 600 * 1000)
+
+            document.cookie = "IservSession=" + response["IservSession"] + ";expires="+expireSAT.toUTCString();
+            document.cookie = "IServSATId=" + response["IServSATId"] + ";expires="+expireSAT.toUTCString();
+            document.cookie = "IservSAT=" + response["IservSAT"] + ";expires="+expireSAT.toUTCString();
+            document.cookie = "mod_auth_openidc_session=" + response["mod_auth_openidc_session"]+ ";expires="+expireopenidc.toUTCString();
 
             console.log(response);
 

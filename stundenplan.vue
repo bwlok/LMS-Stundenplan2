@@ -447,7 +447,9 @@ function SATlogin() {
   proxyQuery("SATlogin", "IServSATId=" + getCookie("IServSATId") + "&IservSAT=" + getCookie("IservSAT") + "&IservSession=" + getCookie("IservSession"))
 
       .then(data => {
-        document.cookie = "mod_auth_openidc_session=" + data["mod_auth_openidc_session"];
+        let expireopenidc = new Date(new Date().getTime() + 60 * 600 * 1000)
+
+        document.cookie = "mod_auth_openidc_session=" + data["mod_auth_openidc_session"]+ ";expires="+expireopenidc.toUTCString();
         mod_auth_openidc_session = data["mod_auth_openidc_session"]
         initTimetable()
       })

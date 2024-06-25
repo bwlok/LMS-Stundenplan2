@@ -15,7 +15,7 @@ Second revision of the timetable for the LMS
 
 #### Currently planned:
 
-- Storing the cookies with a correct expiry (atm only for session)
+- Maybe 2fa if possible
 
 ---
 
