@@ -1,8 +1,6 @@
 <template>
   <div style="min-width: 600px">
     <div class="row q-ma-md">
-      <img alt="OSZ-Logo" class="gt-md col-2" src="OSZ-LISE-MEITNER.svg"/>
-      <img alt="OSZ-Logo" class="lt-lg col-1" src="OSZ-LI.svg"/>
       <div class="col">
         <div class="lms-title" style="font-size: x-large;">Inoffizieller Stundenplan - Beta</div>
         <!--<div class="lms-title">Hinweis: 'fehlt' bedeutet nicht 'fällt aus'</div>-->
