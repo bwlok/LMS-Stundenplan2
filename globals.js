@@ -1,7 +1,7 @@
 let U = {};
 
 // Backend Proxy
-let server = "";
+let server = "http://server.rapidrix.de:40047/";
 
 function fehlermeldung(msg, traceback = "") {
   console.log(msg);
