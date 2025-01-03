@@ -1,6 +1,9 @@
 # LMS-Stundenplan2
 Second revision of the timetable for the LMS
 
+# This isnt updated anymore, the latest version is still up on https://osz.bwlok.dev, feel free to use/update this code
+# Most modern code is on the live branch
+
 ---
 
 #### What is working:
